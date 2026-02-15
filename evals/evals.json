@@ -1,0 +1,59 @@
+{
+  "evals": [
+    {
+      "id": "risk-management-case",
+      "description": "Grade a student submission on a risk management case study",
+      "prompt": "Grade this student's exam submission. The case study, questions, rubric, and student answer are provided in the attached files.",
+      "files": [
+        "files/case-study.md",
+        "files/questions.md",
+        "files/rubric.md",
+        "files/student-answer.md"
+      ],
+      "expectations": [
+        "Output includes a mark for each question",
+        "Each mark falls within the appropriate rubric band",
+        "Feedback references specific case facts",
+        "Partial credit is awarded where understanding is demonstrated",
+        "Feedback is brief (2-4 sentences per question)",
+        "Total mark is calculated correctly",
+        "Generic answers without case reference are penalised"
+      ]
+    },
+    {
+      "id": "weak-submission",
+      "description": "Grade a weak submission to test partial credit logic",
+      "prompt": "Grade this student's exam submission. The case study, questions, rubric, and student answer are provided in the attached files.",
+      "files": [
+        "files/case-study.md",
+        "files/questions.md",
+        "files/rubric.md",
+        "files/weak-answer.md"
+      ],
+      "expectations": [
+        "Correctly identifies conceptual understanding where present",
+        "Awards partial credit appropriately",
+        "Feedback is constructive, not punitive",
+        "Gaps are clearly identified",
+        "Marks align with lower rubric bands"
+      ]
+    },
+    {
+      "id": "excellent-submission",
+      "description": "Grade an excellent submission to test upper band placement",
+      "prompt": "Grade this student's exam submission. The case study, questions, rubric, and student answer are provided in the attached files.",
+      "files": [
+        "files/case-study.md",
+        "files/questions.md",
+        "files/rubric.md",
+        "files/excellent-answer.md"
+      ],
+      "expectations": [
+        "Correctly places answer in top band",
+        "Feedback acknowledges strengths",
+        "Still identifies minor areas for improvement if any",
+        "Case application is recognised and credited"
+      ]
+    }
+  ]
+}
